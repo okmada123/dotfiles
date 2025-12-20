@@ -20,7 +20,8 @@ nmap j :m -2<CR>
 " ctrl-c copies selection to the system clipboard
 " vmap <C-c> "+y
 
-" y in visual mode copies selectio to the system clipboard
+" y in visual mode copies selection to the system clipboard
 " (and still also 'yanks' the lines, so 'p' works afterwards)
-vnoremap y "+y
-
+if has('mac') || has('macunix')
+  vnoremap y "+y
+endif
