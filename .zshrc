@@ -126,5 +126,8 @@ function dockershellsh() {
     docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${dirname} "$@"
 }
 
+# auto update brew packages
+/opt/update-brew.sh
+
 # iPhone -> Mac clipboard sync
 defaults write ~/Library/Preferences/com.apple.coreservices.useractivityd.plist ClipboardSharingEnabled 1
