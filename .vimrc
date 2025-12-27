@@ -1,8 +1,10 @@
 syntax on
 command R :w | ! %:p
 :set nu
+:set paste " on macos (maybe not exclusively) to fix pasting
 :set incsearch
-set paste " on macos (maybe not exclusively) to fix pasting
+:set hlsearch
+:set ignorecase
 
 " indentation and tabs
 "set ts=4 sw=4
