@@ -13,6 +13,9 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
+" clear highlight after search by pressing enter
+nnoremap <CR> :noh<CR><CR>
+
 " move lines
 vnoremap <C-j> :m '<-2<CR>gv=gv
 vnoremap <C-k> :m '>+1<CR>gv=gv
