@@ -131,3 +131,7 @@ function dockershellsh() {
 
 # iPhone -> Mac clipboard sync
 defaults write ~/Library/Preferences/com.apple.coreservices.useractivityd.plist ClipboardSharingEnabled 1
+
+# Locale
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
