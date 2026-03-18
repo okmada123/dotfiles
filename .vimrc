@@ -1,10 +1,9 @@
 syntax on
 command R :w | ! %:p
-:set nu
-:set paste " on macos (maybe not exclusively) to fix pasting
-:set incsearch
-:set hlsearch
-:set ignorecase
+set nu
+set incsearch
+set hlsearch
+set ignorecase
 
 " indentation and tabs
 "set ts=4 sw=4
@@ -30,3 +29,4 @@ nmap j :m -2<CR>
 if has('mac') || has('macunix')
   vnoremap y "+y
 endif
+
