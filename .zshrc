@@ -135,3 +135,6 @@ defaults write ~/Library/Preferences/com.apple.coreservices.useractivityd.plist 
 # Locale
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
+
+# searchsploit alias
+alias sspl='searchsploit'
