@@ -29,5 +29,6 @@ nmap j :m -2<CR>
 " (and still also 'yanks' the lines, so 'p' works afterwards)
 if has('mac') || has('macunix')
   vnoremap y "+y
+  nnoremap <expr> yy '"' . (v:register ==# '"' ? '+' : v:register) . 'yy'
 endif
 
