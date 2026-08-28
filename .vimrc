@@ -1,9 +1,13 @@
 syntax on
 command R :w | ! %:p
 set nu
+
+" better searching :)
 set incsearch
 set hlsearch
 set ignorecase
+" clear highlight after search by pressing enter
+nnoremap <CR> :noh<CR><CR>
 
 " indentation and tabs
 "set ts=4 sw=4
@@ -11,9 +15,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-
-" clear highlight after search by pressing enter
-nnoremap <CR> :noh<CR><CR>
 
 " move lines
 vnoremap <C-j> :m '<-2<CR>gv=gv
