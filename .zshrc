@@ -127,7 +127,7 @@ function dockershellsh() {
 }
 
 # auto update brew packages
-/opt/update-brew.sh
+BREW_UPDATE_TRIGGER=zshrc /opt/update-brew.sh
 
 # iPhone -> Mac clipboard sync
 defaults write ~/Library/Preferences/com.apple.coreservices.useractivityd.plist ClipboardSharingEnabled 1
